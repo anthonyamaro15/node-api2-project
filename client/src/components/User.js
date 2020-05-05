@@ -1,9 +1,11 @@
 import React from "react";
 
-const User = () => {
+const User = ({ data }) => {
+  const { contents, title } = data;
   return (
     <div className="User">
-      <h1>user</h1>
+      <h3>{title}</h3>
+      <p>{contents}</p>
     </div>
   );
 };
